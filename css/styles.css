@@ -1,0 +1,274 @@
+/*********************************************
+Global Layout Set-up
+*********************************************/
+
+* { 
+	box-sizing: border-box;
+}
+  
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: sans-serif; /* I couldn't find the exact font */
+	color: #333;
+	background: #ababab;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+h4 {
+	font-weight: 800;
+	padding-bottom: 1em;
+}
+
+p {
+	line-height: 1.5;
+	margin: 0 1em;
+}
+
+/* Link Styles */
+a {
+	text-decoration: none;
+	color: #4a4a4a;
+}
+
+a:hover {
+	color: #9c9c9c;
+}
+
+hr {
+	border-color: #000;
+}
+
+
+
+/*********************************************
+Nav styles
+*********************************************/
+
+.main-nav ul {
+	padding: 0;
+}
+
+.main-nav li {
+	list-style-type: none;
+}
+
+
+
+/*********************************************
+Header styles
+*********************************************/
+
+.header {
+	padding-top: 0; /* reduce seperation between h1 and top */
+}
+
+.header div img {
+	width: 70%;
+	margin: 2em auto 0 auto;
+}
+
+.header p {
+	margin-top: 2em;
+}
+
+
+/*********************************************
+Content Styles
+*********************************************/
+
+.secondary-content {
+	margin-top: 4em;
+}
+
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+.main-content {
+	padding-top: 4em;		/* add seperation between sections */
+}
+
+.main-content ul {
+	padding: 0;
+}
+
+.main-content li {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1em;
+	list-style-type: none;
+}
+
+.main-content img {
+	width: 100%;
+	box-shadow: 5px 5px 5px 3px #ccc;
+}
+
+
+
+/*********************************************
+Footer Styles
+*********************************************/
+
+.footer {
+	padding: 6em 0 0 0;		/* add seperation between sections */
+}
+
+.footer hr {   
+	margin-top: 6em;
+}
+
+.phone {
+	margin-top: 1em;
+}
+
+.phone, .email {
+	display: block;
+	color: darkblue;
+	line-height: 2.2;
+}
+
+.phone:hover, .email:hover {
+	color: lightblue;
+}
+
+.footer span {
+	font-weight: 700;
+}
+
+.footer .logo, .footer-secondary-nav a {
+	display: block;
+	font-size: 0.8em;
+	font-weight: 800;
+}
+
+.footer .logo {
+	float: left;
+	margin-left: 1em;
+}
+
+.footer-secondary-nav {
+	float: right;
+	margin-right: 1em;
+}
+
+.footer-main-nav {
+	display: none;
+}
+
+
+
+/*********************************************
+Styles for larger screens
+*********************************************/
+
+@media screen and (min-width: 768px) {
+  
+	/***** general *****/
+	.flex {
+		display: flex; 
+		margin: 0 5%;
+	}
+  
+	/***** header *****/
+	.main-nav .flex {
+		justify-content: space-around;
+		margin: 0 20%;	  	/* replace 5% */
+	}
+  
+	.header div img {
+		width: 100%;
+		margin-top: 0;
+	}
+	
+	.profile {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		text-align: left;
+		margin-top: 4em;
+	}
+  
+	.profile p {
+		padding-right: 5%; 	/* make a gutter */
+		margin-top: 0;
+	}
+	
+	/***** content styles *****/
+	.secondary-content {
+		margin-top: 4em;
+	}
+	
+	.main-content li {
+		display: inline-block;
+		width: 40%;
+		margin-left: 2.5%;		/* make a gutter */
+		margin-right: 2.5%;		/* make a gutter */
+	}
+	
+	/***** footer styles *****/
+	.footer p {
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.footer-main-nav {
+		display: block;
+		float: right;
+	}
+	
+	.footer-main-nav ul {
+		padding: 0 1em 0 0;
+		margin-top: -1em;	/* tweek the position */
+	}
+	
+	.footer-main-nav li {
+		list-style-type: none;
+		font-size: 0.8em;
+		padding: 1em;
+	}
+	
+	.footer-secondary-nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+  
+	/***** header styles *****/
+	.large-screen-flex {
+		display: flex;
+		padding: 1em;
+		justify-content: space-between;
+	}	
+	
+	.main-nav li {
+		padding: 1em 1em 0 1em;
+	}
+	
+	/***** content styles *****/
+	.main-content li {
+		width: 25%;
+	}
+}
+
