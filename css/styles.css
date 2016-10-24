@@ -117,6 +117,7 @@ ul.skills {
 	margin: 0 auto;
 	padding-top: 1em;
 	list-style-type: none;
+	vertical-align: top;
 }
 
 .main-content img {
@@ -225,26 +226,9 @@ Styles for larger screens
 		margin-right: 2.5%;		/* make a gutter */
 	}
 	
-	
-/******************************************************/
-/******************************************************/
-/* I believe my problem has something to do with      */
-/* setting the height of .main-content li but none of */
-/* these examples work.                               */
-/******************************************************/
-/******************************************************/
-	
-/*	.main-content li {
-		height: 360px;
-	} */
-	
-/*	.gallery-text {
-		height: 180px;
-	} */
-	
-/*	.main-content p {
+	.gallery-text p {
 		height: 100px;
-	} */
+	} 
 	
 	/***** footer styles *****/
 	.footer p {
